@@ -10,6 +10,3 @@ def process_file(file_path):
     else:
         raise ValueError("Не поддерживаемый формат")
     return content
-
-content = process_file("test_file.txt") 
-print(content)

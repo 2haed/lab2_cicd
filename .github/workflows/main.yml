@@ -35,4 +35,4 @@ jobs:
 
     - name: Run Tests with pytest  
       run: |
-        pytest tests/  # Указание на папку с тестами
+        pytest app/tests/  
