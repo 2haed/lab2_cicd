@@ -29,5 +29,3 @@ def extract_images_from_docx(file_path):
             image.save(f"app/data/image_{image_count}.{image_format}")
 
     return image_count
-
-extract_images_from_docx('test.docx')
