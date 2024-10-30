@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>MkLorum</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Home";
+        var mkdocs_page_input_path = "index.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> MkLorum
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Home</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#table-of-contents">Table of Contents</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#add-your-project-dependencies-here">Add your project dependencies here</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#usage">Usage</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#process-a-file-supports-txt-and-docx-formats">Process a file (supports .txt and .docx formats):</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#count-words-in-a-given-text">Count words in a given text:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#extract-images-from-a-docx-file">Extract images from a DOCX file:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#functions">Functions</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#process_file">process_file</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#count_words">count_words</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#extract_images_from_docx">extract_images_from_docx</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#license">License</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">MkLorum</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Home</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="my-project-documentation">My Project Documentation</h1>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#functions">Functions</a></li>
+<li><a href="#process_file">process_file</a></li>
+<li><a href="#count_words">count_words</a></li>
+<li><a href="#extract_images_from_docx">extract_images_from_docx</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<hr />
+<h2 id="introduction">Introduction</h2>
+<p>This project provides a set of utility functions for processing text and DOCX files. It allows users to read text files, extract text from DOCX documents, count words in a given text, and extract images from DOCX files.</p>
+<h2 id="installation">Installation</h2>
+<p>To use this project, ensure you have Python installed. You can install the necessary dependencies using pip. Create a <code>requirements.txt</code> file and include the following:</p>
+<h2 id="add-your-project-dependencies-here">Add your project dependencies here</h2>
+<p>Then, install the dependencies:</p>
+<pre><code class="language-bash">pip install -r requirements.txt
+</code></pre>
+<h2 id="usage">Usage</h2>
+<p>You can use the functions provided in this project as follows:</p>
+<h3 id="process-a-file-supports-txt-and-docx-formats">Process a file (supports .txt and .docx formats):</h3>
+<pre><code class="language-python">content = process_file('path/to/your/file.txt')  # for text files
+content = process_file('path/to/your/file.docx')  # for DOCX files
+print(content)
+</code></pre>
+<h3 id="count-words-in-a-given-text">Count words in a given text:</h3>
+<pre><code class="language-python">text = &quot;This is an example text.&quot;
+word_count = count_words(text)
+print(f&quot;Number of words: {word_count}&quot;)
+</code></pre>
+<h3 id="extract-images-from-a-docx-file">Extract images from a DOCX file:</h3>
+<pre><code class="language-python">image_count = extract_images_from_docx('path/to/your/file.docx')
+print(f&quot;Number of images extracted: {image_count}&quot;)
+</code></pre>
+<h2 id="functions">Functions</h2>
+<h3 id="process_file">process_file</h3>
+<p>Reads the content of a file. Supports .txt and .docx formats.
+- Parameters:
+  - file_path (str): Path to the file to be processed.
+- Output: 
+  - str: Content of the file.
+- Raises: 
+  - ValueError: If the file format is unsupported.</p>
+<h3 id="count_words">count_words</h3>
+<p>Counts the number of words in a given text.
+- Parameters:
+  - text (str): The text to count words from.
+- Output: 
+  - int: Number of words in the text.</p>
+<h3 id="extract_images_from_docx">extract_images_from_docx</h3>
+<p>Extracts images from a DOCX file and saves them in the specified directory.
+- Parameters:
+  - file_path (str): Path to the DOCX file.
+- Output: 
+  - int: Number of images extracted.</p>
+<h2 id="license">License</h2>
+<p>This project is licensed under the MIT License. See the LICENSE file for details.</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.6.1
+Build Date UTC : 2024-10-30 11:20:49.193639+00:00
+-->
