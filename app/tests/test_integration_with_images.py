@@ -12,9 +12,9 @@ def docx_file_with_image(tmp_path):
 
     image = Image.new('RGB', (100, 100), color = 'red')
     image_stream = io.BytesIO()
-    image.save(image_stream, format="PNG")
+    image.save(image_stream, format="jpeg")
     image_stream.seek(0)
-    doc.part.related_parts["image1.png"] = io.BytesIO(image_stream.read())
+    doc.part.related_parts["image1.jpeg"] = io.BytesIO(image_stream.read())
     
     doc.save(file)
     return file
@@ -27,4 +27,4 @@ def test_process_and_extract_images(docx_file_with_image, tmp_path):
     output_folder.mkdir()
     image_count = extract_images_from_docx(str(docx_file_with_image), str(output_folder))
     assert image_count == 1
-    assert (output_folder / "image_1.png").exists()
+    assert (output_folder / "image_1.jpeg").exists()
