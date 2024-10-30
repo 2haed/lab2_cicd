@@ -1,4 +1,4 @@
-site_name: MkLorum
+site_name: Лабораторная работа CI/CD
 nav:
   - Home: index.md
 theme: readthedocs

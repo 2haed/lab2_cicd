@@ -1,4 +1,4 @@
-# My Project Documentation
+# File proccesing
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -58,26 +58,26 @@ print(f"Number of images extracted: {image_count}")
 
 ### process_file
 Reads the content of a file. Supports .txt and .docx formats.
-- Parameters:
-  - file_path (str): Path to the file to be processed.
-- Output: 
-  - str: Content of the file.
-- Raises: 
-  - ValueError: If the file format is unsupported.
+
+- Parameters: ```file_path (str)``` Path to the file to be processed.
+
+- Output: ```str``` Content of the file.
+
+- Raises: ```ValueError``` If the file format is unsupported.
 
 ### count_words 
 Counts the number of words in a given text.
-- Parameters:
-  - text (str): The text to count words from.
-- Output: 
-  - int: Number of words in the text.
+
+- Parameters: ```text (str)``` The text to count words from.
+
+- Output: ```int``` Number of words in the text.
 
 ### extract_images_from_docx
 Extracts images from a DOCX file and saves them in the specified directory.
-- Parameters:
-  - file_path (str): Path to the DOCX file.
-- Output: 
-  - int: Number of images extracted.
+
+- Parameters: ```file_path (str)``` Path to the DOCX file.
+
+- Output: ```int``` Number of images extracted.
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
