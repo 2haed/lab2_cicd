@@ -10,7 +10,7 @@ def process_file(file_path):
         doc = Document(file_path)
         content = "\n".join([paragraph.text for paragraph in doc.paragraphs])
     else:
-        raise ValueError("Не поддерживаемый формат")
+        raise ValueError("Unsupported format")
     return content
 
 def count_words(text):
