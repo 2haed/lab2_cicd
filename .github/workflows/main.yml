@@ -45,6 +45,6 @@ jobs:
     - name: Deploy Documentation to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}  # Автоматическая публикация документации
+        github_token: ${{ secrets.GITHUB_TOKEN }}  
         publish_dir: ./site
-        publish_branch: gh-pages  # Укажите ветку, на которую будет опубликована документация
+        publish_branch: gh-pages 
