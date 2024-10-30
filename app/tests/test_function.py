@@ -27,5 +27,5 @@ def test_process_docx_file(docx_file):
 def test_process_unsupported_file_format(tmp_path):
     file = tmp_path / "test_file.pdf"
     file.write_text("PDF content")
-    with pytest.raises(ValueError, match="Unsupported format"):
+    with pytest.raises(ValueError, match="Не поддерживаемый формат"):
         process_file(str(file))
