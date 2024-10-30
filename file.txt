@@ -1,1 +1,1 @@
-Мой файл 
+This is a sample text file with seven words.
