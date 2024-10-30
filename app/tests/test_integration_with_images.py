@@ -25,6 +25,6 @@ def test_process_and_extract_images(docx_file_with_image, tmp_path):
 
     output_folder = tmp_path / "images"
     output_folder.mkdir()
-    image_count = extract_images_from_docx(str(docx_file_with_image), str(output_folder))
+    image_count = extract_images_from_docx(str(docx_file_with_image))
     assert image_count == 1
     assert (output_folder / "image_1.jpeg").exists()
