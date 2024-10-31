@@ -37,13 +37,7 @@ jobs:
       run: |
         pytest app/tests/
 
-    - name: Build Documentation 
-      run: |
-        mkdocs build
-
-    - name: Deploy Documentation to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}  
-        publish_dir: ./site
-        publish_branch: gh-pages 
+    - name: Deploy MkDocs
+      uses: mhausenblas/mkdocs-deploy-gh-pages@1.26
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
