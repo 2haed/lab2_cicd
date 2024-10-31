@@ -39,6 +39,6 @@ jobs:
 
     - name: Deploy Documentaion 
       run: |
-        mkdocs gh-deploy 
+        mkdocs build
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
