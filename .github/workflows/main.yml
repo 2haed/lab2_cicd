@@ -37,7 +37,8 @@ jobs:
       run: |
         pytest app/tests/
 
-    - name: MkDocs builder
-      uses: moonpathbg/mkdocs_builder@latest
+    - name: Deploy Documentaion 
+      run: |
+        mkdocs gh-deploy 
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
