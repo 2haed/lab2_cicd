@@ -37,7 +37,7 @@ jobs:
       run: |
         pytest app/tests/
 
-    - name: Deploy MkDocs
-      uses: mhausenblas/mkdocs-deploy-gh-pages@1.26
+    - name: MkDocs builder
+      uses: moonpathbg/mkdocs_builder@latest
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
